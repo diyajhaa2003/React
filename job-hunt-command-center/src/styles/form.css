@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer base
+{
+    label{
+        @apply text-slate-500 font-bold;
+    }
+    input
+    {
+      @apply   focus:border-blue-500 w-full outline-none px-4 py-3 border border-slate-300 rounded-xl shadow-sm mt-3
+    }
+
+     button {
+    @apply transition-all duration-200 ease-out;
+  }
+
+  button:hover {
+    @apply -translate-y-0.5 shadow-md;
+  }
+
+  button:active {
+    @apply translate-y-0 scale-95;
+  }
+}
